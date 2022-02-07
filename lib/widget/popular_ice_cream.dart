@@ -14,17 +14,17 @@ class PopularIceCreamCard extends StatelessWidget {
     return Row(
       children: [
         Container(
-          child: SizedBox(
-            width: deviceSize.width / 4,
-            child: Image.asset(imagePath),
-          ),
-          decoration: BoxDecoration(
-            color: Colors.pink,
-            borderRadius:
-                BorderRadius.circular(AppConstant.defaultBorderRadius),
+          color: Colors.pink.shade100,
+          child: Row(
+            children: [
+              SizedBox(
+                width: deviceSize.width / 4,
+                child: Image.asset(imagePath),
+              ),
+              Text(iceCreamTitle),
+            ],
           ),
         ),
-        Text(iceCreamTitle),
         const SizedBox(
           width: AppConstant.defaultWidth,
         )

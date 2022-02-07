@@ -29,9 +29,9 @@ class SearchCard extends StatelessWidget {
           height: 50,
           child: Container(
             width: deviceSize.width / 4,
-            decoration: const BoxDecoration(
-              color: Colors.pink,
-              borderRadius: BorderRadius.all(
+            decoration: BoxDecoration(
+              color: Colors.pink.shade500,
+              borderRadius: const BorderRadius.all(
                 Radius.circular(AppConstant.defaultBorderRadius),
               ),
             ),
