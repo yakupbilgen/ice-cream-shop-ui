@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:icecreamui/screen/homepage.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: Center(
-      child: Text('Ice Cream Shop UI'),
+  runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Homepage(),
     ),
-  ));
+  );
 }
