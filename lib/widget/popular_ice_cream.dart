@@ -10,10 +10,14 @@ class PopularIceCreamCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size deviceSize = MediaQuery.of(context).size;
     return Row(
       children: [
         Container(
-          child: Image.asset(imagePath),
+          child: SizedBox(
+            width: deviceSize.width / 4,
+            child: Image.asset(imagePath),
+          ),
           decoration: BoxDecoration(
             color: Colors.pink,
             borderRadius:
