@@ -26,37 +26,47 @@ class _HomepageState extends State<Homepage> {
             const ProfilNameAndPhohtoCard(),
             //search text and button
             const SizedBox(height: AppConstant.defaultHeight),
-            Row(
+            Stack(
               children: [
                 TextFormField(
-                  decoration: const InputDecoration(
-                    prefixIcon: Icon(Icons.search),
-                    hintText: 'Search',
+                  decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.search),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(
+                          AppConstant.defaultBorderRadius),
+                    ),
                   ),
-                )
+                ),
+                Positioned(
+                  right: 0,
+                  child: RawMaterialButton(
+                    fillColor: Colors.pink.shade400,
+                    onPressed: () => Navigator.pop(context),
+                    child: Row(
+                      children: const [
+                        Icon(
+                          Icons.filter,
+                          color: Colors.white,
+                        ),
+                        SizedBox(width: 10.0),
+                        Text(
+                          'Filter',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
-            // Row(
-            //   children: [
-            //     TextFormField(
-            //       decoration: const InputDecoration(
-            //         prefixIcon: Icon(Icons.search),
-            //         border: OutlineInputBorder(),
-            //         hintText: 'Enter a search term',
-            //       ),
-            //     ),
-            //     ElevatedButton(
-            //       onPressed: () {},
-            //       child: Row(
-            //         children: const [
-            //           Icon(Icons.settings),
-            //           Text('Filter'),
-            //         ],
-            //       ),
-            //     ),
-            //   ],
-            // ),
-            const Text('Top Flavours'),
+            const SizedBox(height: AppConstant.defaultHeight),
+
+            Text(
+              'Top Flavours',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+            const SizedBox(height: AppConstant.defaultHeight),
+
             //Vanilla ice cream
             Card(
               child: Container(
@@ -93,7 +103,7 @@ class _HomepageState extends State<Homepage> {
                 decoration: BoxDecoration(
                     borderRadius:
                         BorderRadius.circular(AppConstant.defaultBorderRadius),
-                    color: Colors.pink),
+                    color: Colors.pink.shade100),
               ),
             ),
             const Text('Popular Ice Cream'),
