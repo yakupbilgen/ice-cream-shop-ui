@@ -25,12 +25,10 @@ class TopFlavoursCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: deviceSize.width / 5 * 2,
+                  width: deviceSize.width * 0.4,
                   child: Image.asset(vanillaIceCream),
                 ),
-                //const Spacer(),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Center(
@@ -41,25 +39,19 @@ class TopFlavoursCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           color: Colors.amber,
                           child: Text('1KG',
                               style: Theme.of(context).textTheme.subtitle2),
                         ),
-                        SizedBox(width: deviceSize.width / 8),
-                        Row(
-                          children: [
-                            const Icon(
-                              Icons.star,
-                              color: Colors.amber,
-                            ),
-                            Text('4.9',
-                                style: Theme.of(context).textTheme.subtitle2)
-                          ],
-                        )
+                        SizedBox(width: deviceSize.width * 0.1),
+                        const Icon(
+                          Icons.star,
+                          color: Colors.amber,
+                        ),
+                        Text('4.9',
+                            style: Theme.of(context).textTheme.subtitle2),
                       ],
                     ),
                     Row(
@@ -71,9 +63,7 @@ class TopFlavoursCard extends StatelessWidget {
                               .subtitle1
                               ?.copyWith(fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
-                          width: deviceSize.width / 10,
-                        ),
+                        SizedBox(width: deviceSize.width * 0.1),
                         RawMaterialButton(
                           onPressed: () {},
                           child: const Icon(
@@ -82,7 +72,7 @@ class TopFlavoursCard extends StatelessWidget {
                           ),
                           fillColor: Colors.pink.shade500,
                           shape: const CircleBorder(),
-                        )
+                        ),
                       ],
                     )
                   ],

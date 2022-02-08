@@ -24,7 +24,13 @@ class PopularIceCreamWidget extends StatelessWidget {
                 child: Image.asset(imagePath),
               ),
               const SizedBox(width: 5),
-              Text(iceCreamTitle),
+              Text(
+                iceCreamTitle,
+                style: Theme.of(context)
+                    .textTheme
+                    .subtitle1
+                    ?.copyWith(fontWeight: FontWeight.bold),
+              ),
               const SizedBox(width: 5),
             ],
           ),

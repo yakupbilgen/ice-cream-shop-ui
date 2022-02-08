@@ -41,10 +41,19 @@ class _HomepageState extends State<Homepage> {
               const SizedBox(height: AppConstant.defaultHeight),
               const PopularIceCreamCard(),
               const SizedBox(height: AppConstant.defaultHeight),
-              const Text('Top Item'),
-              Row(
-                children: const [TopItemCard()],
+              /*
+              */
+              Text(
+                'Top Item',
+                style: Theme.of(context).textTheme.headline6,
               ),
+              Row(
+                children: const [
+                  TopItemCard(),
+                ],
+              ),
+              /*
+              */
             ],
           ),
         ),
