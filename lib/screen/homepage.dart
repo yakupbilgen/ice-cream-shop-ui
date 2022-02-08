@@ -39,38 +39,8 @@ class _HomepageState extends State<Homepage> {
               const SizedBox(height: AppConstant.defaultHeight),
               const TopFlavoursCard(),
               const SizedBox(height: AppConstant.defaultHeight),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Popular Ice Cream',
-                      style: Theme.of(context).textTheme.headline6,
-                    ),
-                    const SizedBox(height: AppConstant.defaultHeight),
-                    Row(
-                      children: [
-                        PopularIceCreamCard(
-                            imagePath: vanillaIceCream,
-                            iceCreamTitle: 'Vanilla'),
-                        PopularIceCreamCard(
-                            imagePath: vanillaIceCream,
-                            iceCreamTitle: 'Vanilla'),
-                        PopularIceCreamCard(
-                            imagePath: vanillaIceCream,
-                            iceCreamTitle: 'Vanilla'),
-                        PopularIceCreamCard(
-                            imagePath: vanillaIceCream,
-                            iceCreamTitle: 'Vanilla'),
-                        PopularIceCreamCard(
-                            imagePath: vanillaIceCream,
-                            iceCreamTitle: 'Vanilla'),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+              const PopularIceCreamCard(),
+              const SizedBox(height: AppConstant.defaultHeight),
               const Text('Top Item'),
               Row(
                 children: const [TopItemCard()],
