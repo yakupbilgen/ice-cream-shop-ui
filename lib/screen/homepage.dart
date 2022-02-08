@@ -32,28 +32,16 @@ class _HomepageState extends State<Homepage> {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const ProfilNameAndPhohtoCard(),
-              const SizedBox(height: AppConstant.defaultHeight),
-              const SearchCard(),
-              const SizedBox(height: AppConstant.defaultHeight),
-              const TopFlavoursCard(),
-              const SizedBox(height: AppConstant.defaultHeight),
-              const PopularIceCreamCard(),
-              const SizedBox(height: AppConstant.defaultHeight),
-              /*
-              */
-              Text(
-                'Top Item',
-                style: Theme.of(context).textTheme.headline6,
-              ),
-              Row(
-                children: const [
-                  TopItemCard(),
-                ],
-              ),
-              /*
-              */
+            children: const [
+              ProfilNameAndPhohtoCard(),
+              SizedBox(height: AppConstant.defaultHeight),
+              SearchCard(),
+              SizedBox(height: AppConstant.defaultHeight),
+              TopFlavoursCard(),
+              SizedBox(height: AppConstant.defaultHeight),
+              PopularIceCreamCard(),
+              SizedBox(height: AppConstant.defaultHeight),
+              TopItemCard(),
             ],
           ),
         ),

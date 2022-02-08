@@ -9,14 +9,24 @@ class TopItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          cardItem(context, deviceSize),
-          cardItem(context, deviceSize),
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Top Item',
+          style: Theme.of(context).textTheme.headline6,
+        ),
+        const SizedBox(height: AppConstant.defaultHeight),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              cardItem(context, deviceSize),
+              cardItem(context, deviceSize),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
