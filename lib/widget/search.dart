@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constant/app_constant.dart';
+import '../constant/text_constant.dart';
 
 class SearchCard extends StatelessWidget {
   const SearchCard({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class SearchCard extends StatelessWidget {
           decoration: const InputDecoration(
             filled: true,
             fillColor: Color.fromARGB(99, 189, 189, 189),
-            hintText: 'Search',
+            hintText: TextConstant.search,
             prefixIcon: Icon(Icons.search),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.all(
@@ -43,7 +44,7 @@ class SearchCard extends StatelessWidget {
                   color: Colors.white,
                 ),
                 Text(
-                  'Filter',
+                  TextConstant.filter,
                   style: Theme.of(context)
                       .textTheme
                       .subtitle1

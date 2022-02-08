@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:icecreamui/constant/app_constant.dart';
 
+import '../constant/text_constant.dart';
+
 class PopularIceCreamWidget extends StatelessWidget {
   final String imagePath;
   final String iceCreamTitle;
@@ -12,8 +14,6 @@ class PopularIceCreamWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Container(
           color: Colors.pink.shade100,
@@ -54,7 +54,7 @@ class PopularIceCreamCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Popular Ice Cream',
+          TextConstant.populerIceCream,
           style: Theme.of(context).textTheme.headline6,
         ),
         const SizedBox(height: AppConstant.defaultHeight),
@@ -63,15 +63,20 @@ class PopularIceCreamCard extends StatelessWidget {
           child: Row(
             children: [
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream, iceCreamTitle: 'Vanilla'),
+                  imagePath: vanillaIceCream,
+                  iceCreamTitle: TextConstant.vanilla),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream, iceCreamTitle: 'Neopolitan'),
+                  imagePath: vanillaIceCream,
+                  iceCreamTitle: TextConstant.neopolitan),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream, iceCreamTitle: 'Chocolate'),
+                  imagePath: vanillaIceCream,
+                  iceCreamTitle: TextConstant.chocolate),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream, iceCreamTitle: 'Strawberry'),
+                  imagePath: vanillaIceCream,
+                  iceCreamTitle: TextConstant.strawberry),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream, iceCreamTitle: 'Melon'),
+                  imagePath: vanillaIceCream,
+                  iceCreamTitle: TextConstant.melon),
             ],
           ),
         ),

@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppConstant {
   static const defaultPaddingAll = 20.0;
   static const defaultBorderRadius = 20.0;
@@ -7,4 +9,7 @@ class AppConstant {
 
   static const defaultHeight = 20.0;
   static const defaultHeightMin = 10.0;
+
+  Color cardBackgroundColor = Colors.pink.shade100;
+  Color buttonBackgroundColor = Colors.pink.shade500;
 }

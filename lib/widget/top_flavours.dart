@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constant/app_constant.dart';
+import '../constant/text_constant.dart';
 
 class TopFlavoursCard extends StatelessWidget {
   const TopFlavoursCard({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class TopFlavoursCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Top Flavours',
+            TextConstant.topFlavours,
             style: Theme.of(context).textTheme.headline6,
           ),
           const SizedBox(height: AppConstant.defaultHeight),
@@ -33,7 +34,7 @@ class TopFlavoursCard extends StatelessWidget {
                   children: [
                     Center(
                       child: Text(
-                        'Vanilla Ice Cream',
+                        TextConstant.vanillaIceCream,
                         style: Theme.of(context).textTheme.headline6,
                       ),
                     ),
@@ -57,7 +58,7 @@ class TopFlavoursCard extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          '\$14,60',
+                          TextConstant.topFlavoursCost,
                           style: Theme.of(context)
                               .textTheme
                               .subtitle1
@@ -80,7 +81,6 @@ class TopFlavoursCard extends StatelessWidget {
               ],
             ),
             decoration: BoxDecoration(
-              //color: const Color(0xFFF7C9D4),
               color: Colors.pink.shade100,
               borderRadius:
                   BorderRadius.circular(AppConstant.defaultBorderRadius),

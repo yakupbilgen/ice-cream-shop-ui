@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:icecreamui/constant/text_constant.dart';
 
 class ProfilNameAndPhohtoCard extends StatelessWidget {
   const ProfilNameAndPhohtoCard({Key? key}) : super(key: key);
@@ -13,14 +14,14 @@ class ProfilNameAndPhohtoCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Hey Emma',
+              TextConstant.profilName,
               style: Theme.of(context)
                   .textTheme
                   .headline5
                   ?.copyWith(fontWeight: FontWeight.bold),
             ),
             Text(
-              'What flavor do you lite to eat?',
+              TextConstant.description,
               style: Theme.of(context).textTheme.subtitle2,
             ),
           ],

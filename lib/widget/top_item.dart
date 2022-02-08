@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:icecreamui/constant/app_constant.dart';
 
+import '../constant/text_constant.dart';
+
 String vanillaIceCream = 'assets/images/ice_cream/vanilla.png';
 
 class TopItemCard extends StatelessWidget {
@@ -13,7 +15,7 @@ class TopItemCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Top Item',
+          TextConstant.topItem,
           style: Theme.of(context).textTheme.headline6,
         ),
         const SizedBox(height: AppConstant.defaultHeight),
@@ -52,7 +54,7 @@ Widget cardItem(BuildContext context, Size deviceSize) {
           ),
           const SizedBox(width: AppConstant.defaultHeightMin),
           Text(
-            'Sherbet flavors',
+            TextConstant.sherbetFlavors,
             style: Theme.of(context)
                 .textTheme
                 .subtitle1
@@ -60,7 +62,7 @@ Widget cardItem(BuildContext context, Size deviceSize) {
           ),
           const SizedBox(width: AppConstant.defaultHeightMin),
           Text(
-            'With strawberry jam',
+            TextConstant.strawberryjam,
             style: Theme.of(context).textTheme.subtitle2,
             textAlign: TextAlign.right,
           ),
@@ -69,7 +71,7 @@ Widget cardItem(BuildContext context, Size deviceSize) {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text(
-                '\$14,60',
+                TextConstant.topItemCost,
                 style: Theme.of(context)
                     .textTheme
                     .subtitle1
