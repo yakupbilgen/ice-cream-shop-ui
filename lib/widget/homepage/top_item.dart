@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:icecreamui/constant/app_constant.dart';
+import 'package:icecreamui/screen/ice_cream_detail.dart';
 
-import '../constant/text_constant.dart';
+import '../../constant/text_constant.dart';
 
 String vanillaIceCream = 'assets/images/ice_cream/vanilla.png';
 
@@ -81,14 +82,19 @@ Widget cardItem(BuildContext context, Size deviceSize) {
                 width: deviceSize.width * 0.05,
               ),
               RawMaterialButton(
-                onPressed: () {},
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const IceCreamDetail(),
+                  ),
+                ),
                 child: const Icon(
                   Icons.add,
                   color: Colors.white,
                 ),
                 fillColor: Colors.pink.shade500,
                 shape: const CircleBorder(),
-              )
+              ),
             ],
           )
         ],

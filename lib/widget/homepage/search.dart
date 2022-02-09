@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../constant/app_constant.dart';
-import '../constant/text_constant.dart';
+import '../../constant/app_constant.dart';
+import '../../constant/text_constant.dart';
 
 class SearchCard extends StatelessWidget {
   const SearchCard({Key? key}) : super(key: key);

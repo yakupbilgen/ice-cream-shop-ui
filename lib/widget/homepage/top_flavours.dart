@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:icecreamui/screen/ice_cream_detail.dart';
 
-import '../constant/app_constant.dart';
-import '../constant/text_constant.dart';
+import '../../constant/app_constant.dart';
+import '../../constant/text_constant.dart';
 
 class TopFlavoursCard extends StatelessWidget {
   const TopFlavoursCard({Key? key}) : super(key: key);

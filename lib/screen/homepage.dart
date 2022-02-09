@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:icecreamui/constant/app_constant.dart';
-import 'package:icecreamui/widget/popular_ice_cream.dart';
-import 'package:icecreamui/widget/profil_name_and_photo.dart';
-import 'package:icecreamui/widget/top_flavours.dart';
-import 'package:icecreamui/widget/top_item.dart';
+import 'package:icecreamui/widget/homepage/popular_ice_cream.dart';
+import 'package:icecreamui/widget/homepage/profil_name_and_photo.dart';
+import 'package:icecreamui/widget/homepage/top_flavours.dart';
+import 'package:icecreamui/widget/homepage/top_item.dart';
 
-import '../widget/search.dart';
+import '../widget/homepage/search.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
