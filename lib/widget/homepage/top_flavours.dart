@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icecreamui/screen/ice_cream_detail.dart';
 
+import '../../screen/ice_cream_detail.dart';
 import '../../constant/app_constant.dart';
 import '../../constant/text_constant.dart';
 

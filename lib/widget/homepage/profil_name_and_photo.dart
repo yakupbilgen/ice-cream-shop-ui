@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icecreamui/constant/text_constant.dart';
+
+import '../../constant/text_constant.dart';
 
 class ProfilNameAndPhohtoCard extends StatelessWidget {
   const ProfilNameAndPhohtoCard({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:icecreamui/constant/app_constant.dart';
-import 'package:icecreamui/screen/ice_cream_detail.dart';
 
+import '../../constant/app_constant.dart';
+import '../../screen/ice_cream_detail.dart';
 import '../../constant/text_constant.dart';
 
 String vanillaIceCream = 'assets/images/ice_cream/vanilla.png';

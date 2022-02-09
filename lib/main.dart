@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icecreamui/screen/homepage.dart';
+
+import 'screen/homepage.dart';
 
 void main() {
   runApp(

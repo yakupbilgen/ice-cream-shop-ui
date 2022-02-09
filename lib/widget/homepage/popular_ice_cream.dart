@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icecreamui/constant/app_constant.dart';
 
+import '../../constant/app_constant.dart';
 import '../../constant/text_constant.dart';
 
 class PopularIceCreamWidget extends StatelessWidget {
