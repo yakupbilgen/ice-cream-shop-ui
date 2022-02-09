@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../constant/app_constant.dart';
@@ -21,38 +22,47 @@ class _IceCreamDetailState extends State<IceCreamDetail> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         toolbarHeight: 0,
+        leading: IconButton(
+            onPressed: () => Navigator.pop(context),
+            icon: Icon(Icons.arrow_back, color: Colors.pink.shade100)),
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.favorite_border,
+                color: Colors.pink.shade100,
+              )),
+        ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(AppConstant.defaultPaddingAll),
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Expanded(
-              flex: 5,
-              child: Card(
-                elevation: 0,
-                child: Container(
-                  child: Image.asset(iceCreamImage),
-                  decoration: BoxDecoration(
-                    color: Colors.pink.shade100,
-                    borderRadius: const BorderRadius.only(
-                      bottomLeft:
-                          Radius.circular(AppConstant.defaultBorderRadius),
-                      bottomRight:
-                          Radius.circular(AppConstant.defaultBorderRadius),
-                    ),
+              flex: 2,
+              child: Container(
+                child: Image.asset(iceCreamImage),
+                decoration: BoxDecoration(
+                  color: Colors.pink.shade100,
+                  borderRadius: const BorderRadius.only(
+                    bottomLeft:
+                        Radius.circular(AppConstant.defaultBorderRadius),
+                    bottomRight:
+                        Radius.circular(AppConstant.defaultBorderRadius),
                   ),
                 ),
               ),
             ),
-            Expanded(
-              flex: 3,
-              child: SingleChildScrollView(
+            Padding(
+              padding: const EdgeInsets.all(AppConstant.defaultPaddingAll),
+              child: Expanded(
+                flex: 2,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text('Raspberry Ice Cream',
                         style: Theme.of(context)
                             .textTheme
-                            .headline3
+                            .headline4
                             ?.copyWith(fontWeight: FontWeight.bold)),
                     const SizedBox(height: AppConstant.defaultHeightMin),
                     Row(
@@ -105,14 +115,14 @@ class _IceCreamDetailState extends State<IceCreamDetail> {
                     ),
                     const SizedBox(height: AppConstant.defaultHeight),
                     Text(
-                        """Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.""",
+                        "The best sorbets come from the best fruits. That's why we hand-pick heritage raspberriest and combine them with the sweetest amd öpst juice stawberries.",
                         style: Theme.of(context).textTheme.headline6),
                     const SizedBox(height: AppConstant.defaultHeight),
                     SizedBox(
                       width: deviceSize.width,
-                      height: deviceSize.height * 0.1,
+                      height: deviceSize.height * 0.07,
                       child: RawMaterialButton(
-                        fillColor: Colors.pink.shade500,
+                        fillColor: Colors.pink.shade100,
                         onPressed: () {},
                         child: Text(
                           'Add to Card',

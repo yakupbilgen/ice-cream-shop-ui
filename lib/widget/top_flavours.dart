@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:icecreamui/screen/ice_cream_detail.dart';
 
 import '../constant/app_constant.dart';
 import '../constant/text_constant.dart';
@@ -66,7 +68,12 @@ class TopFlavoursCard extends StatelessWidget {
                         ),
                         SizedBox(width: deviceSize.width * 0.1),
                         RawMaterialButton(
-                          onPressed: () {},
+                          onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const IceCreamDetail(),
+                            ),
+                          ),
                           child: const Icon(
                             Icons.add,
                             color: Colors.white,

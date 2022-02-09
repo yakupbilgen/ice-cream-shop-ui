@@ -19,8 +19,6 @@ String vanillaIceCream = 'assets/images/ice_cream/vanilla.png';
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
-    //Size deviceSize = MediaQuery.of(context).size;
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
