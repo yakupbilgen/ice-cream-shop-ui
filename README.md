@@ -1,17 +1,9 @@
 # icecreamui
 
-A new Flutter project.
+### Original design: https://www.uplabs.com/posts/ice-cream-shop-mobile-app-867709e9-2a2c-4634-ab88-e513fb0ef21d
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# ice-cream-shop-ui
+### App UI:
+<p>
+ <img src="https://github.com/yakupbilgen/ice-cream-shop-ui/blob/main/assets/images/app_ui/1.png" alt="app ui" height="480" width="240"/>
+ <img src="https://github.com/yakupbilgen/ice-cream-shop-ui/blob/main/assets/images/app_ui/2.png" alt="app ui" height="480" width="240"/>
+</p>
