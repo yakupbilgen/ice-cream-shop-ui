@@ -10,6 +10,8 @@ class AppConstant {
   static const defaultHeight = 20.0;
   static const defaultHeightMin = 10.0;
 
-  Color cardBackgroundColor = Colors.pink.shade100;
-  Color buttonBackgroundColor = Colors.pink.shade500;
+  static Color cardBackgroundColor = Colors.pink.shade100;
+  static Color buttonBackgroundColor = Colors.pink.shade500;
+  static Color starsFillColor = Colors.yellow;
+  static Color starsEmptyColor = Colors.grey;
 }

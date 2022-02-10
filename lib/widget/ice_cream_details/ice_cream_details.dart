@@ -14,11 +14,11 @@ Column buildIceCreamDetails(BuildContext context, Size deviceSize) {
       const SizedBox(height: AppConstant.defaultHeightMin),
       Row(
         children: [
-          const Icon(Icons.grade, color: Colors.yellow),
-          const Icon(Icons.grade, color: Colors.yellow),
-          const Icon(Icons.grade, color: Colors.yellow),
-          const Icon(Icons.grade, color: Colors.yellow),
-          const Icon(Icons.grade, color: Colors.grey),
+          Icon(Icons.grade, color: AppConstant.starsFillColor),
+          Icon(Icons.grade, color: AppConstant.starsFillColor),
+          Icon(Icons.grade, color: AppConstant.starsFillColor),
+          Icon(Icons.grade, color: AppConstant.starsFillColor),
+          Icon(Icons.grade, color: AppConstant.starsEmptyColor),
           const SizedBox(width: AppConstant.defaultWidth),
           Text('4.9 [229 Reviews]',
               style: Theme.of(context).textTheme.bodySmall),
@@ -34,7 +34,7 @@ Column buildIceCreamDetails(BuildContext context, Size deviceSize) {
               GestureDetector(
                 onTap: (() {}),
                 child: Container(
-                  color: Colors.pink.shade300,
+                  color: AppConstant.buttonBackgroundColor,
                   child: const Icon(
                     Icons.remove,
                     color: Colors.white,
@@ -53,7 +53,7 @@ Column buildIceCreamDetails(BuildContext context, Size deviceSize) {
               GestureDetector(
                 onTap: (() {}),
                 child: Container(
-                  color: Colors.pink.shade300,
+                  color: AppConstant.buttonBackgroundColor,
                   child: const Icon(
                     Icons.add,
                     color: Colors.white,
@@ -70,7 +70,7 @@ Column buildIceCreamDetails(BuildContext context, Size deviceSize) {
                   style: Theme.of(context)
                       .textTheme
                       .headline4
-                      ?.copyWith(color: Colors.pink.shade300)),
+                      ?.copyWith(color: AppConstant.buttonBackgroundColor)),
               TextSpan(
                   text: '14,60',
                   style: Theme.of(context).textTheme.headline4?.copyWith(
@@ -89,7 +89,7 @@ Column buildIceCreamDetails(BuildContext context, Size deviceSize) {
         height: deviceSize.height * 0.07,
         child: Container(
           decoration: BoxDecoration(
-              color: Colors.pink.shade300,
+              color: AppConstant.buttonBackgroundColor,
               borderRadius: const BorderRadius.all(
                   Radius.circular(AppConstant.defaultBorderRadius))),
           child: TextButton(

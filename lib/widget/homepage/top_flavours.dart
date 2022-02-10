@@ -77,7 +77,7 @@ class TopFlavoursCard extends StatelessWidget {
                             Icons.add,
                             color: Colors.white,
                           ),
-                          fillColor: Colors.pink.shade500,
+                          fillColor: AppConstant.buttonBackgroundColor,
                           shape: const CircleBorder(),
                         ),
                       ],
@@ -87,7 +87,7 @@ class TopFlavoursCard extends StatelessWidget {
               ],
             ),
             decoration: BoxDecoration(
-              color: Colors.pink.shade100,
+              color: AppConstant.cardBackgroundColor,
               borderRadius:
                   BorderRadius.circular(AppConstant.defaultBorderRadius),
             ),

@@ -40,7 +40,7 @@ Widget cardItem(BuildContext context, Size deviceSize) {
     child: Container(
       padding: const EdgeInsets.only(left: AppConstant.defaultWidthMin),
       decoration: BoxDecoration(
-        color: Colors.pink.shade100,
+        color: AppConstant.cardBackgroundColor,
         borderRadius: const BorderRadius.all(
           Radius.circular(AppConstant.defaultBorderRadius),
         ),
@@ -92,7 +92,7 @@ Widget cardItem(BuildContext context, Size deviceSize) {
                   Icons.add,
                   color: Colors.white,
                 ),
-                fillColor: Colors.pink.shade500,
+                fillColor: AppConstant.buttonBackgroundColor,
                 shape: const CircleBorder(),
               ),
             ],

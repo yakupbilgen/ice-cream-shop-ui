@@ -16,7 +16,7 @@ class PopularIceCreamWidget extends StatelessWidget {
     return Row(
       children: [
         Container(
-          color: Colors.pink.shade100,
+          color: AppConstant.cardBackgroundColor,
           child: Row(
             children: [
               SizedBox(

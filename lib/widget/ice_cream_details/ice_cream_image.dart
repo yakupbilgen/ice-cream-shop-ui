@@ -8,7 +8,7 @@ Container buildIceCreamImage() {
   return Container(
     child: Image.asset(iceCreamImage),
     decoration: BoxDecoration(
-      color: Colors.pink.shade100,
+      color: AppConstant.cardBackgroundColor,
       borderRadius: const BorderRadius.only(
         bottomLeft: Radius.circular(AppConstant.defaultBorderRadius),
         bottomRight: Radius.circular(AppConstant.defaultBorderRadius),

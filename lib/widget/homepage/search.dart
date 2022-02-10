@@ -31,7 +31,7 @@ class SearchCard extends StatelessWidget {
           child: Container(
             width: deviceSize.width / 4,
             decoration: BoxDecoration(
-              color: Colors.pink.shade500,
+              color: AppConstant.buttonBackgroundColor,
               borderRadius: const BorderRadius.all(
                 Radius.circular(AppConstant.defaultBorderRadius),
               ),
