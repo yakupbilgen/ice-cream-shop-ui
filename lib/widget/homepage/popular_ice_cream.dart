@@ -20,10 +20,11 @@ class PopularIceCreamWidget extends StatelessWidget {
           child: Row(
             children: [
               SizedBox(
-                width: deviceSize.width / 4,
+                width: deviceSize.width * 0.2,
+                height: deviceSize.height * 0.1,
                 child: Image.asset(imagePath),
               ),
-              const SizedBox(width: 5),
+              const SizedBox(width: AppConstant.defaultWidthMin),
               Text(
                 iceCreamTitle,
                 style: Theme.of(context)
@@ -31,7 +32,7 @@ class PopularIceCreamWidget extends StatelessWidget {
                     .subtitle1
                     ?.copyWith(fontWeight: FontWeight.bold),
               ),
-              const SizedBox(width: 5),
+              const SizedBox(width: AppConstant.defaultWidthMin),
             ],
           ),
         ),
@@ -44,6 +45,9 @@ class PopularIceCreamWidget extends StatelessWidget {
 }
 
 String vanillaIceCream = 'assets/images/ice_cream/vanilla.png';
+String iceCreamTwo = 'assets/images/ice_cream/2.png';
+String iceCreamThree = 'assets/images/ice_cream/3.png';
+String iceCreamFour = 'assets/images/ice_cream/4.png';
 
 class PopularIceCreamCard extends StatelessWidget {
   const PopularIceCreamCard({Key? key}) : super(key: key);
@@ -66,13 +70,13 @@ class PopularIceCreamCard extends StatelessWidget {
                   imagePath: vanillaIceCream,
                   iceCreamTitle: TextConstant.vanilla),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream,
+                  imagePath: iceCreamTwo,
                   iceCreamTitle: TextConstant.neopolitan),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream,
+                  imagePath: iceCreamThree,
                   iceCreamTitle: TextConstant.chocolate),
               PopularIceCreamWidget(
-                  imagePath: vanillaIceCream,
+                  imagePath: iceCreamFour,
                   iceCreamTitle: TextConstant.strawberry),
               PopularIceCreamWidget(
                   imagePath: vanillaIceCream,

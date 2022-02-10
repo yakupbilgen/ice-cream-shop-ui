@@ -4,7 +4,8 @@ import '../../constant/app_constant.dart';
 import '../../screen/ice_cream_detail.dart';
 import '../../constant/text_constant.dart';
 
-String vanillaIceCream = 'assets/images/ice_cream/vanilla.png';
+String iceCreamOne = 'assets/images/ice_cream/2.png';
+String iceCreamTwo = 'assets/images/ice_cream/3.png';
 
 class TopItemCard extends StatelessWidget {
   const TopItemCard({Key? key}) : super(key: key);
@@ -24,8 +25,8 @@ class TopItemCard extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              cardItem(context, deviceSize),
-              cardItem(context, deviceSize),
+              cardItem(context, deviceSize, iceCreamOne),
+              cardItem(context, deviceSize, iceCreamTwo),
             ],
           ),
         ),
@@ -34,7 +35,7 @@ class TopItemCard extends StatelessWidget {
   }
 }
 
-Widget cardItem(BuildContext context, Size deviceSize) {
+Widget cardItem(BuildContext context, Size deviceSize, iceCreamImage) {
   return Card(
     elevation: 0,
     child: Container(
@@ -50,7 +51,7 @@ Widget cardItem(BuildContext context, Size deviceSize) {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
-            vanillaIceCream,
+            iceCreamImage,
             width: deviceSize.width * 0.4,
           ),
           const SizedBox(width: AppConstant.defaultHeightMin),

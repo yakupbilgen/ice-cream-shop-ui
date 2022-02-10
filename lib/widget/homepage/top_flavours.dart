@@ -30,6 +30,7 @@ class TopFlavoursCard extends StatelessWidget {
                   width: deviceSize.width * 0.4,
                   child: Image.asset(vanillaIceCream),
                 ),
+                const SizedBox(width: AppConstant.defaultWidth),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
