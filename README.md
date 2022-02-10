@@ -4,6 +4,6 @@
 
 ### App UI:
 <p>
- <img src="https://github.com/yakupbilgen/ice-cream-shop-ui/blob/main/assets/images/app_ui/1.png" alt="app ui" height="480" width="240"/>
- <img src="https://github.com/yakupbilgen/ice-cream-shop-ui/blob/main/assets/images/app_ui/2.png" alt="app ui" height="480" width="240"/>
+ <img src="https://github.com/yakupbilgen/ice-cream-shop-ui/blob/main/assets/images/app_ui/1.jpg" alt="app ui" height="480" width="240"/>
+ <img src="https://github.com/yakupbilgen/ice-cream-shop-ui/blob/main/assets/images/app_ui/2.jpg" alt="app ui" height="480" width="240"/>
 </p>
